@@ -1,0 +1,1414 @@
+{
+ "credits": "Animacionet dhe faqja: Blerta Hajdini Azemi.",
+ "courses": {
+  "grafika-inxhinierike": {
+   "name": "Grafika Inxhinierike",
+   "book": "GI",
+   "book_title": "Detyrat seminarike nga Grafika Inxhinierike",
+   "book_cite": "Detyrat seminarike nga Grafika Inxhinierike (Prof. Asoc. Dr. Shpetim Lajqi, MSc. Rifat Krasniqi; UP, Fakulteti i Inxhinierisë Mekanike, 2021)",
+   "pdf": "shkarkime/Grafika_Inxhinierike_2021.pdf",
+   "pdf_size": "11 MB",
+   "number": "4",
+   "intro": "Lënda dëgjohet në semestrin e parë me 2 orë ligjërata dhe 2 orë ushtrime. Studenti duhet t’i ketë punuar të gjitha detyrat seminarike; provimi punohet në letër hamer A1 me tabelën standarde.",
+   "teoria": true,
+   "exercises": {
+    "I": {
+     "title": "Vijat, rakordët dhe detalet makinerike",
+     "pages": [
+      10
+     ],
+     "summary": "Tri detyra në formatin A4: llojet e vijave, rakordët sipas tabelës me 16 variante dhe konturat e dy pjesëve makinerike. Përpjesa 1:1; punohen me laps dhe pas kontrollit të asistentit me tush."
+    },
+    "II": {
+     "title": "Shkrimi teknik",
+     "pages": [
+      30
+     ],
+     "summary": "Shkronjat e drejta dhe të pjerrëta teknike, numrat dhe simbolet, në formularët e gatshëm 4.II.1 deri 4.II.3; me laps dhe pas kontrollit me tush."
+    },
+    "III": {
+     "title": "Projeksionet, prerjet dhe kuotimi i trupit makinerik",
+     "pages": [
+      41
+     ],
+     "summary": "Në formatin A3: projeksionet e nevojshme të trupit të dhënë në aksonometri, prerjet (e plotë, gjysmë prerja, lokale), kuotimi sipas rregullave, tabela standarde me emërtimin TRUPI MAKINERIK dhe ashpërsia e sipërfaqeve (a = N6, b = N9, c = N12)."
+    }
+   }
+  },
+  "gjeometria-deskriptive": {
+   "name": "Gjeometria Deskriptive",
+   "book": "GD",
+   "book_title": "Detyrat seminarike nga Gjeometria Deskriptive",
+   "book_cite": "Detyrat seminarike nga Gjeometria Deskriptive (Prof. dr. Musli Bajraktari, Prof. Ass. Ilir Doçi; asistentët Mr. sc. Shpetim Lajqi, MSc. Riad Ramadani; UP, Fakulteti i Inxhinierisë Mekanike, 2009)",
+   "pdf": "shkarkime/Gjeometria_Deskriptive_2009.pdf",
+   "pdf_size": "2 MB",
+   "number": "GD",
+   "intro": "Pjesa e dytë e lëndës Vizatimi teknik me gjeometri deskriptive. Detyrat punohen me laps në letër të bardhë A4 të kufizuar, me emrin, mbiemrin dhe numrin e indeksit.",
+   "teoria": false,
+   "exercises": {
+    "I": {
+     "title": "Pika dhe drejtëza",
+     "pages": [],
+     "summary": "Projeksioni ortogonal i pikave në tri rrafshet e projektimit, projeksioni i drejtëzës dhe gjurmët, dukshmëria dhe oktantet e saj."
+    },
+    "II": {
+     "title": "Rrafshi",
+     "pages": [
+      6
+     ],
+     "summary": "Gjurmët e rrafshit nëpër dy drejtëza, projeksioni i pikës në rrafsh me rrafshe ndihmëse dhe paralelet e rrafshit nëpër një pikë."
+    },
+    "III": {
+     "title": "Transformimi dhe rrotullimi",
+     "pages": [
+      10
+     ],
+     "summary": "Dy transformime të tetraedrit dhe madhësia e vërtetë e trekëndëshit me metodën e transformimit dhe me metodën e rrotullimit."
+    },
+    "IV": {
+     "title": "Distancat dhe këndet",
+     "pages": [
+      14
+     ],
+     "summary": "Distanca e pikës nga rrafshi me transformim dhe me rrotullim, trekëndëshi me kënd të dhënë dhe këndet e drejtëzës me rrafshet projektuese."
+    },
+    "V": {
+     "title": "Aksonometria",
+     "pages": [],
+     "summary": "Nga projeksionet ortogonale të trupit në pamjen aksonometrike (këndi xy = 30°, Ny = 3 : 4, Nx = Nz = 1 : 1)."
+    }
+   }
+  }
+ },
+ "tasks": [
+  {
+   "id": "i-1",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.1",
+   "task": "Detyra I.1",
+   "number": "4.I.1",
+   "title": "Llojet e vijave dhe detalet makinerike",
+   "kerkesa": "Në formatin A4 të vizatohen llojet e vijave dhe detalet makinerike sipas renditjes së dhënë, me përmasat A, B dhe C që cakton asistenti.",
+   "data": "A = ___ (10…15), B = ___ (15…25), C = ___ (15…25); trashësia e vijave δ = 0,50 mm, δ/2 = 0,25 mm",
+   "pages": [
+    10,
+    11,
+    12
+   ],
+   "figure": null,
+   "sheets": [],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-2",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.2",
+   "task": "Detyra I.2",
+   "number": "4.I.2",
+   "title": "Rakordët",
+   "kerkesa": "Në formatin A4 të vizatohen rakordët e dhëna në Rastin Nr. II me të dhënat e variantit tënd (1 deri 16) nga tabela e faqes 10: vijë – hark rrethi – vijë, vijë – hark – hark – vijë dhe hark – hark – hark.",
+   "data": "R, R₁, R₂, R₃, R₄, l dhe l₁ sipas variantit, në mm (tabela në faqen 10); përpjesa 1:1",
+   "note": "Teoria: kapitulli 1.7, Konstruktimi i rakordeve (faqet 14 deri 16).",
+   "pages": [
+    10,
+    17,
+    18,
+    19
+   ],
+   "figure": null,
+   "sheets": [],
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-01",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.1",
+   "task": "Detyra I.3.1",
+   "number": "4.I.3.1",
+   "title": "Detali makinerik, varianti 1",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-01.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-01-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-01-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    20
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-02",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.2",
+   "task": "Detyra I.3.2",
+   "number": "4.I.3.2",
+   "title": "Detali makinerik, varianti 2",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-02.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-02-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-02-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    20
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-03",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.3",
+   "task": "Detyra I.3.3",
+   "number": "4.I.3.3",
+   "title": "Detali makinerik, varianti 3",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-03.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-03-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-03-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    21
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-04",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.4",
+   "task": "Detyra I.3.4",
+   "number": "4.I.3.4",
+   "title": "Detali makinerik, varianti 4",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-04.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-04-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-04-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    21
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-05",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.5",
+   "task": "Detyra I.3.5",
+   "number": "4.I.3.5",
+   "title": "Detali makinerik, varianti 5",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-05.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-05-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-05-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    22,
+    29
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-06",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.6",
+   "task": "Detyra I.3.6",
+   "number": "4.I.3.6",
+   "title": "Detali makinerik, varianti 6",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-06.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-06-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-06-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    22,
+    28
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-07",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.7",
+   "task": "Detyra I.3.7",
+   "number": "4.I.3.7",
+   "title": "Detali makinerik, varianti 7",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-07.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-07-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-07-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    23
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-08",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.8",
+   "task": "Detyra I.3.8",
+   "number": "4.I.3.8",
+   "title": "Detali makinerik, varianti 8",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-08.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-08-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-08-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    23
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-09",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.9",
+   "task": "Detyra I.3.9",
+   "number": "4.I.3.9",
+   "title": "Detali makinerik, varianti 9",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-09.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-09-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-09-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    24
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-10",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.10",
+   "task": "Detyra I.3.10",
+   "number": "4.I.3.10",
+   "title": "Detali makinerik, varianti 10",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-10.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-10-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-10-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    24
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-11",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.11",
+   "task": "Detyra I.3.11",
+   "number": "4.I.3.11",
+   "title": "Detali makinerik, varianti 11",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-11.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-11-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-11-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    25
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-12",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.12",
+   "task": "Detyra I.3.12",
+   "number": "4.I.3.12",
+   "title": "Detali makinerik, varianti 12",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-12.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-12-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-12-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    25
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-13",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.13",
+   "task": "Detyra I.3.13",
+   "number": "4.I.3.13",
+   "title": "Detali makinerik, varianti 13",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-13.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-13-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-13-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    26
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-14",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.14",
+   "task": "Detyra I.3.14",
+   "number": "4.I.3.14",
+   "title": "Detali makinerik, varianti 14",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-14.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-14-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-14-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    26
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-15",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.15",
+   "task": "Detyra I.3.15",
+   "number": "4.I.3.15",
+   "title": "Detali makinerik, varianti 15",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-15.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-15-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-15-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    27
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "i-3-16",
+   "course": "grafika-inxhinierike",
+   "exercise": "I",
+   "short": "I.3.16",
+   "task": "Detyra I.3.16",
+   "number": "4.I.3.16",
+   "title": "Detali makinerik, varianti 16",
+   "kerkesa": "Në dy formate A4 të vizatohen konturat e dy pjesëve makinerike të dhëna në figurë (detali i majtë dhe detali i djathtë). Përpjesa 1:1; së pari me laps, pas kontrollit të asistentit me tush.",
+   "data": "Përmasat sipas figurës, në mm; rrathët dhe rakordet me kompas sipas fletëve të ndërtimit",
+   "figure": "libri/GI/fig/i3-16.png",
+   "sheets": [
+    {
+     "file": "libri/GI/ndertimi/i3-16-majtas.png",
+     "caption": "Detali i majtë: 1 – e dhëna (qendrat, rrathët dhe vijat që vizatohen drejtpërdrejt), 2 – e gjetura (qendrat e rakordeve me R ± r, vijat me paralele)"
+    },
+    {
+     "file": "libri/GI/ndertimi/i3-16-djathtas.png",
+     "caption": "Detali i djathtë: 1 – e dhëna, 2 – e gjetura"
+    }
+   ],
+   "pages": [
+    10,
+    27
+   ],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "ii-1",
+   "course": "grafika-inxhinierike",
+   "exercise": "II",
+   "short": "II.1",
+   "task": "Detyra II.1",
+   "number": "4.II.1",
+   "title": "Shkronjat e drejta teknike",
+   "kerkesa": "Në formatin A4 të vizatohen shkronjat e mëdha dhe të vogla teknike të drejta, në rrjetat ndihmëse të formularit 4.II.1.",
+   "data": "Lartësia e shkronjave h = 7 mm; dimensionet sipas tabelës 5 (faqja 31)",
+   "pages": [
+    30,
+    34,
+    38
+   ],
+   "figure": null,
+   "sheets": [],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "ii-2",
+   "course": "grafika-inxhinierike",
+   "exercise": "II",
+   "short": "II.2",
+   "task": "Detyra II.2",
+   "number": "4.II.2",
+   "title": "Shkronjat e pjerrëta teknike",
+   "kerkesa": "Në formatin A4 të vizatohen shkronjat e mëdha dhe të vogla teknike të pjerrëta (75° ndaj horizontales), në rrjetat ndihmëse të formularit 4.II.2.",
+   "data": "Lartësia e shkronjave h = 7 mm; dimensionet sipas tabelës 5 (faqja 31)",
+   "pages": [
+    30,
+    36,
+    39
+   ],
+   "figure": null,
+   "sheets": [],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "ii-3",
+   "course": "grafika-inxhinierike",
+   "exercise": "II",
+   "short": "II.3",
+   "task": "Detyra II.3",
+   "number": "4.II.3",
+   "title": "Numrat dhe simbolet teknike",
+   "kerkesa": "Në formatin A4 të vizatohen numrat dhe simbolet e pjerrëta në rrjetat ndihmëse të formularit 4.II.3.",
+   "data": "Lartësia e shkronjave h = 7 mm; dimensionet sipas tabelës 5 (faqja 31)",
+   "pages": [
+    30,
+    37,
+    40
+   ],
+   "figure": null,
+   "sheets": [],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "iii-01",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.1",
+   "task": "Ushtrimi III.1",
+   "number": "4.III.1",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-01.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-01.html",
+   "steps": 13,
+   "sheets": []
+  },
+  {
+   "id": "iii-02",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.2",
+   "task": "Ushtrimi III.2",
+   "number": "4.III.2",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-02.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-02.html",
+   "steps": 13,
+   "sheets": []
+  },
+  {
+   "id": "iii-03",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.3",
+   "task": "Ushtrimi III.3",
+   "number": "4.III.3",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-03.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-03.html",
+   "steps": 14,
+   "sheets": []
+  },
+  {
+   "id": "iii-04",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.4",
+   "task": "Ushtrimi III.4",
+   "number": "4.III.4",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-04.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-04.html",
+   "steps": 13,
+   "sheets": []
+  },
+  {
+   "id": "iii-05",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.5",
+   "task": "Ushtrimi III.5",
+   "number": "4.III.5",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-05.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-05.html",
+   "steps": 13,
+   "sheets": []
+  },
+  {
+   "id": "iii-06",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.6",
+   "task": "Ushtrimi III.6",
+   "number": "4.III.6",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-06.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-06.html",
+   "steps": 13,
+   "sheets": []
+  },
+  {
+   "id": "iii-07",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.7",
+   "task": "Ushtrimi III.7",
+   "number": "4.III.7",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-07.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-07.html",
+   "steps": 14,
+   "sheets": []
+  },
+  {
+   "id": "iii-08",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.8",
+   "task": "Ushtrimi III.8",
+   "number": "4.III.8",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-08.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-08.html",
+   "steps": 14,
+   "sheets": []
+  },
+  {
+   "id": "iii-09",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.9",
+   "task": "Ushtrimi III.9",
+   "number": "4.III.9",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-09.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-09.html",
+   "steps": 14,
+   "sheets": []
+  },
+  {
+   "id": "iii-10",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.10",
+   "task": "Ushtrimi III.10",
+   "number": "4.III.10",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-10.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-10.html",
+   "steps": 13,
+   "sheets": []
+  },
+  {
+   "id": "iii-11",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.11",
+   "task": "Ushtrimi III.11",
+   "number": "4.III.11",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-11.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-11.html",
+   "steps": 13,
+   "sheets": []
+  },
+  {
+   "id": "iii-12",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.12",
+   "task": "Ushtrimi III.12",
+   "number": "4.III.12",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-12.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-12.html",
+   "steps": 13,
+   "sheets": []
+  },
+  {
+   "id": "iii-13",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.13",
+   "task": "Ushtrimi III.13",
+   "number": "4.III.13",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-13.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-13.html",
+   "steps": 13,
+   "sheets": []
+  },
+  {
+   "id": "iii-14",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.14",
+   "task": "Ushtrimi III.14",
+   "number": "4.III.14",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-14.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-14.html",
+   "steps": 13,
+   "sheets": []
+  },
+  {
+   "id": "iii-15",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.15",
+   "task": "Ushtrimi III.15",
+   "number": "4.III.15",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-15.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-15.html",
+   "steps": 14,
+   "sheets": []
+  },
+  {
+   "id": "iii-16",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.16",
+   "task": "Ushtrimi III.16",
+   "number": "4.III.16",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-16.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-16.html",
+   "steps": 13,
+   "sheets": []
+  },
+  {
+   "id": "iii-17",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.17",
+   "task": "Ushtrimi III.17",
+   "number": "4.III.17",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-17.png",
+   "pages": [
+    41,
+    45
+   ],
+   "note": "Faqja 45 e librit tregon zgjidhjen model të këtij trupi në formatin A3.",
+   "animation": "GI-III-17.html",
+   "steps": 14,
+   "sheets": []
+  },
+  {
+   "id": "iii-18",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.18",
+   "task": "Ushtrimi III.18",
+   "number": "4.III.18",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-18.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-18.html",
+   "steps": 13,
+   "sheets": []
+  },
+  {
+   "id": "iii-19",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.19",
+   "task": "Ushtrimi III.19",
+   "number": "4.III.19",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-19.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-19.html",
+   "steps": 13,
+   "sheets": []
+  },
+  {
+   "id": "iii-20",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.20",
+   "task": "Ushtrimi III.20",
+   "number": "4.III.20",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-20.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-20.html",
+   "steps": 13,
+   "sheets": []
+  },
+  {
+   "id": "iii-21",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.21",
+   "task": "Ushtrimi III.21",
+   "number": "4.III.21",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-21.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-21.html",
+   "steps": 14,
+   "sheets": []
+  },
+  {
+   "id": "iii-22",
+   "course": "grafika-inxhinierike",
+   "exercise": "III",
+   "short": "III.22",
+   "task": "Ushtrimi III.22",
+   "number": "4.III.22",
+   "title": "Trupi makinerik",
+   "kerkesa": "Në formatin A3 të vizatohen projeksionet e nevojshme të trupit të paraqitur në aksonometri; të bëhen prerjet e nevojshme (prerja e plotë, gjysmë prerja, prerja lokale) që trupi të jetë plotësisht i definuar; kuotimi sipas rregullave të vizatimit teknik; tabela standarde me emërtimin TRUPI MAKINERIK.",
+   "data": "Përmasat sipas figurës, në mm; ashpërsia e sipërfaqeve a = N6, b = N9, c = N12",
+   "figure": "libri/GI/fig/iii-22.png",
+   "pages": [
+    41
+   ],
+   "note": null,
+   "animation": "GI-III-22.html",
+   "steps": 14,
+   "sheets": []
+  },
+  {
+   "id": "i-1",
+   "course": "gjeometria-deskriptive",
+   "exercise": "I",
+   "short": "I₁",
+   "task": "Detyra I₁",
+   "number": "GD.I.1",
+   "title": "Projeksioni ortogonal i pikave A, B, C, D",
+   "kerkesa": "Të hartohet projeksioni ortogonal i pikave A, B, C dhe D të dhëna në tri rrafshet e projektimit.",
+   "data": "O₁ (10; 15); A (2; 2; 2), B (2; −4; 2), C (−4; 3; −2), D (4; −1; 2)",
+   "pages": [
+    4
+   ],
+   "animation": "GD-I-1.html",
+   "steps": 16,
+   "figure": null,
+   "sheets": [],
+   "note": null
+  },
+  {
+   "id": "i-2",
+   "course": "gjeometria-deskriptive",
+   "exercise": "I",
+   "short": "I₂",
+   "task": "Detyra I₂",
+   "number": "GD.I.2",
+   "title": "Projeksioni i drejtëzës a dhe pika C",
+   "kerkesa": "Të përcaktohet projeksioni ortogonal i drejtëzës a të dhënë me pikat A dhe B, dhe pika C e cila i përket drejtëzës a dhe është larguar prej ballores për 2,5 cm.",
+   "data": "O₂ (10; 15); a {A (2; 3; 2), B (6; 1; 2)}",
+   "pages": [
+    2,
+    3
+   ],
+   "animation": "GD-I-2.html",
+   "steps": 16,
+   "figure": null,
+   "sheets": [],
+   "note": null
+  },
+  {
+   "id": "i-3",
+   "course": "gjeometria-deskriptive",
+   "exercise": "I",
+   "short": "I₃",
+   "task": "Detyra I₃",
+   "number": "GD.I.3",
+   "title": "Gjurmët, dukshmëria dhe oktantet e drejtëzës a",
+   "kerkesa": "Në projeksionin ortogonal të përcaktohen gjurmët, dukshmëria dhe oktantet nëpër të cilët kalon drejtëza a e dhënë me anën e pikave.",
+   "data": "O₃ (10; 15); a {A (2; 6; 7), B (7; 2; 3)}",
+   "pages": [
+    5
+   ],
+   "animation": "GD-I-3.html",
+   "steps": 18,
+   "figure": null,
+   "sheets": [],
+   "note": null
+  },
+  {
+   "id": "ii-1",
+   "course": "gjeometria-deskriptive",
+   "exercise": "II",
+   "short": "II₁",
+   "task": "Detyra II₁",
+   "number": "GD.II.1",
+   "title": "Gjurmët e rrafshit α nëpër drejtëzat a dhe b",
+   "kerkesa": "Të përcaktohen gjurmët α₁ dhe α₂ të rrafshit në të cilin janë të shtrira drejtëzat a dhe b. Drejtëza b kalon nëpër pikën B dhe pikën C.",
+   "data": "O₁ (5; 15); a {A (2; 5; 1), B (5; 2; 2)}, b {B (5; 2; 2), C (0; 0; 5)}",
+   "note": "Këto janë të dhënat e zgjidhjes në faqen 7 dhe të animacionit; faqja e ushtrimit (6) jep variantin A (3; 7; 2), B (6; 3; 3), C (0; 0; 6).",
+   "pages": [
+    6,
+    7
+   ],
+   "animation": "GD-II-1.html",
+   "steps": 22,
+   "figure": null,
+   "sheets": []
+  },
+  {
+   "id": "ii-2",
+   "course": "gjeometria-deskriptive",
+   "exercise": "II",
+   "short": "II₂",
+   "task": "Detyra II₂",
+   "number": "GD.II.2",
+   "title": "Projeksioni i pikës A në rrafshin α",
+   "kerkesa": "Të përcaktohet projeksioni i pikës A në rrafshin α me ndihmën e rrafshit ndihmës β normal në rrafshin projektues V dhe rrafshit γ normal në rrafshin projektues H.",
+   "data": "O₂ (5; 15); A (8; 8; 6); α (13; 7; 7)",
+   "pages": [
+    6,
+    8
+   ],
+   "animation": "GD-II-2.html",
+   "steps": 27,
+   "figure": null,
+   "sheets": [],
+   "note": null
+  },
+  {
+   "id": "ii-3",
+   "course": "gjeometria-deskriptive",
+   "exercise": "II",
+   "short": "II₃",
+   "task": "Detyra II₃",
+   "number": "GD.II.3",
+   "title": "Gjurmët e rrafshit T dhe paralelet nëpër pikën A",
+   "kerkesa": "Është dhënë rrafshi T dhe në të pika A. Të hartohen tri gjurmët e rrafshit dhe të shënohen gjurmët boshtore. Në pikën A të konstruktohen tri projeksionet e paraleles së parë (horizontales), së dytë (frontales) dhe së tretë (anësores), dhe të shënohen gjurmët e tyre në rrafshet e projektimit.",
+   "data": "O₃ (10; 13); T (7; 4,5; 6); A (2; 2; ?)",
+   "pages": [
+    6,
+    9
+   ],
+   "figure": null,
+   "sheets": [],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "iii-1",
+   "course": "gjeometria-deskriptive",
+   "exercise": "III",
+   "short": "III₁",
+   "task": "Detyra III₁",
+   "number": "GD.III.1",
+   "title": "Dy transformime të tetraedrit ABCD",
+   "kerkesa": "Të kryhen dy transformime të tetraedrit ABCD: në rrafshin e parë të transformimit, që kalon nëpër pikat Q dhe C dhe është normal në rrafshin e parë projektues, dhe në rrafshin e dytë të transformimit, nëse dihet prerja e rrafsheve transformuese 4 dhe 5 që kalon nëpër pikat M dhe N.",
+   "data": "O₁ (5; 13); A (1; 2; 4), B (1; 4,5; 1), C (4,5; 3,5; 4), D (4,5; 3,5; 1); rrafshet 4 [C, Q (6,5; 0; 0)] dhe 5 [M (10; 0; 0), N (8,5; 7; 0)]",
+   "pages": [
+    10,
+    11
+   ],
+   "figure": null,
+   "sheets": [],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "iii-2",
+   "course": "gjeometria-deskriptive",
+   "exercise": "III",
+   "short": "III₂",
+   "task": "Detyra III₂",
+   "number": "GD.III.2",
+   "title": "Madhësia e vërtetë e trekëndëshit ABC me transformim",
+   "kerkesa": "Të përcaktohet madhësia e vërtetë e trekëndëshit ABC me metodën e transformimit, me ndihmën e paraleles së parë (horizontales) e cila kalon përgjatë pikës A.",
+   "data": "O₂ (4; 15); A (3; 3; 3), B (4; 4; 5), C (10; 3,5; 2)",
+   "pages": [
+    10,
+    12
+   ],
+   "figure": null,
+   "sheets": [],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "iii-3",
+   "course": "gjeometria-deskriptive",
+   "exercise": "III",
+   "short": "III₃",
+   "task": "Detyra III₃",
+   "number": "GD.III.3",
+   "title": "Madhësia e vërtetë e trekëndëshit ABC me rrotullim",
+   "kerkesa": "Të përcaktohet madhësia e vërtetë e trekëndëshit ABC me metodën e rrotullimit, me ndihmën e paraleles së parë (horizontales) e cila kalon përgjatë pikës A.",
+   "data": "O₃ (4; 15); A (4; 4; 4), B (5; 5; 6), C (9; 4; 1,5)",
+   "pages": [
+    10,
+    13
+   ],
+   "figure": null,
+   "sheets": [],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "iv-1",
+   "course": "gjeometria-deskriptive",
+   "exercise": "IV",
+   "short": "IV₁",
+   "task": "Detyra IV₁",
+   "number": "GD.IV.1",
+   "title": "Distanca e pikës A nga rrafshi α, me transformim",
+   "kerkesa": "Të përcaktohet distanca më e shkurtër e pikës A prej rrafshit α me anën e metodës së transformimit.",
+   "data": "O₁ (6; 13); A (6; 4; 6); α (9; 6; 8)",
+   "pages": [
+    14,
+    15
+   ],
+   "figure": null,
+   "sheets": [],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "iv-2",
+   "course": "gjeometria-deskriptive",
+   "exercise": "IV",
+   "short": "IV₂",
+   "task": "Detyra IV₂",
+   "number": "GD.IV.2",
+   "title": "Distanca e pikës A nga rrafshi α, me rrotullim",
+   "kerkesa": "Të përcaktohet distanca më e shkurtër e pikës A prej rrafshit α me anën e metodës së rrotullimit.",
+   "data": "O₂ (6; 13); A (6; 4; 6); α (9; 6; 8)",
+   "pages": [
+    14,
+    16
+   ],
+   "figure": null,
+   "sheets": [],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "iv-3",
+   "course": "gjeometria-deskriptive",
+   "exercise": "IV",
+   "short": "IV₃",
+   "task": "Detyra IV₃",
+   "number": "GD.IV.3",
+   "title": "Trekëndëshi ABC me brinjën AB nën 45° ndaj horizontales",
+   "kerkesa": "Të vizatohet trekëndëshi ABC nëse brinja AB përfshin këndin 45° me horizontalen, ndërsa brinja BC është 5 cm.",
+   "data": "O₃ (6; 13); A (3; 6; ?), B (6; 1; 6), C (8; 4; ?)",
+   "note": "Libri nuk ka faqe zgjidhjeje për këtë detyrë; vetëm teksti i ushtrimit në faqen 14.",
+   "pages": [
+    14
+   ],
+   "figure": null,
+   "sheets": [],
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "iv-4",
+   "course": "gjeometria-deskriptive",
+   "exercise": "IV",
+   "short": "IV₄",
+   "task": "Detyra IV₄",
+   "number": "GD.IV.4",
+   "title": "Këndet α dhe β të drejtëzës a me rrafshet projektuese",
+   "kerkesa": "Me metodën e transformimit të gjendet madhësia e vërtetë e këndeve α dhe β që i përfshin drejtëza a me rrafshet projektuese.",
+   "data": "O₃ (6; 13); a [A (0; 3; 6), B (3; 1; 2)]",
+   "pages": [
+    14,
+    17
+   ],
+   "figure": null,
+   "sheets": [],
+   "note": null,
+   "animation": null,
+   "steps": null
+  },
+  {
+   "id": "v-1",
+   "course": "gjeometria-deskriptive",
+   "exercise": "V",
+   "short": "V₁",
+   "task": "Detyra V₁",
+   "number": "GD.V.1",
+   "title": "Aksonometria e trupit nga projeksionet ortogonale",
+   "kerkesa": "Për trupin e dhënë me anën e projeksioneve ortogonale të paraqitet pamja në aksonometri.",
+   "data": "Këndi xy = 30°; Nx = Nz = 1 : 1, Ny = 3 : 4; përmasat 50, 40, 30 dhe 10 mm",
+   "note": "Kjo detyrë nuk është në librin e vitit 2009; fleta e saj (A3.100) është dhënë veçmas.",
+   "pages": [
+    {
+     "file": "libri/GD/v1-fleta.jpg",
+     "caption": "Fleta e detyrës V₁ (A3.100): projeksionet ortogonale djathtas, zgjidhja aksonometrike majtas"
+    }
+   ],
+   "animation": "GD-V-1.html",
+   "steps": 29,
+   "figure": null,
+   "sheets": []
+  }
+ ],
+ "theory": [
+  {
+   "id": "shenime",
+   "title": "Shënime të rëndësishme për studentin",
+   "pages": [
+    2
+   ]
+  },
+  {
+   "id": "formatet",
+   "title": "1.1 Formatet dhe 1.2 Përpjesa",
+   "pages": [
+    3,
+    4
+   ]
+  },
+  {
+   "id": "vijat",
+   "title": "1.3 Llojet e vijave dhe përdorimi",
+   "pages": [
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "tabelat",
+   "title": "1.4 Tabelat, 1.5 Numri i vizatimit dhe formati A4",
+   "pages": [
+    8,
+    9
+   ]
+  },
+  {
+   "id": "kuotimi",
+   "title": "1.6 Kuotimi – vlerësimi",
+   "pages": [
+    13
+   ]
+  },
+  {
+   "id": "rakordet",
+   "title": "1.7 Konstruktimi i rakordeve",
+   "pages": [
+    14,
+    15,
+    16
+   ]
+  },
+  {
+   "id": "shkrimi",
+   "title": "2.0 Shkrimi teknik",
+   "pages": [
+    31,
+    32,
+    33
+   ]
+  }
+ ]
+}

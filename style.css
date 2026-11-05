@@ -1,0 +1,228 @@
+/* Detyrat seminarike – hap pas hapi
+   One stylesheet for the whole site. The page is drawn like a drawing sheet:
+   a frame (korniza) with a wider binding margin on the left and a title block
+   (stampa) at the bottom. Colours and fonts are the ones the animations use. */
+
+:root {
+  --board: #e5e9e7;   /* the drawing board behind the sheet */
+  --paper: #fbfcfa;   /* the sheet */
+  --ink: #1a1f24;     /* HB: final lines and text */
+  --muted: #55606a;
+  --rule: #c6cdca;    /* thin lines */
+  --pencil: #8f99a0;  /* 2H: construction lines (placeholders) */
+  --proj: #2a62c9;    /* blue pencil: projection lines, links, what is live */
+  --tint: #eef3fb;
+  --font-display: 'Barlow Condensed', 'DejaVu Sans Condensed', 'Arial Narrow', 'Roboto Condensed', sans-serif;
+  --font-body: 'Barlow', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --board: #0e1214; --paper: #1a2024; --ink: #e3e8eb; --muted: #97a3ab;
+    --rule: #2c353a; --pencil: #6b7780; --proj: #7ba6ff; --tint: #1f2a3a; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --board: #0e1214; --paper: #1a2024; --ink: #e3e8eb; --muted: #97a3ab;
+  --rule: #2c353a; --pencil: #6b7780; --proj: #7ba6ff; --tint: #1f2a3a; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--board); }
+body {
+  margin: 0; padding-block: 14px;
+  padding-left: max(10px, env(safe-area-inset-left, 0px));
+  padding-right: max(10px, env(safe-area-inset-right, 0px));
+  font-family: var(--font-body); font-size: 16px; line-height: 1.5;
+  color: var(--ink); background: var(--board);
+  -webkit-text-size-adjust: 100%;
+}
+@media (min-width: 720px) {
+  body { padding-block: 28px; padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); }
+}
+
+a { color: var(--proj); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--proj); outline-offset: 2px; }
+img { max-width: 100%; height: auto; }
+figure { margin: 0; }
+figcaption { font-size: 13.5px; color: var(--muted); margin-top: 6px; }
+
+/* The sheet: paper with a wider margin on the binding side, then the frame. */
+.sheet { max-width: 1180px; margin: 0 auto; background: var(--paper); padding: 10px 10px 10px 18px; }
+@media (min-width: 720px) { .sheet { padding: 18px 18px 18px 52px; } }
+.frame { border: 2px solid var(--ink); padding: 18px 14px 0; }
+@media (min-width: 720px) { .frame { padding: 26px 32px 0; } }
+
+/* breadcrumb */
+.rruga { font-size: 14px; color: var(--muted); margin: 0 0 14px; }
+.rruga a { color: inherit; text-decoration: none; }
+.rruga a:hover { color: var(--proj); }
+.rruga span { margin: 0 6px; }
+
+/* page header */
+.koka { display: grid; gap: 22px; align-items: start; margin: 0 0 8px; }
+@media (min-width: 880px) { .koka.me-figure { grid-template-columns: minmax(0, 1fr) minmax(280px, 44%); } }
+h1 {
+  font-family: var(--font-display); font-weight: 600; letter-spacing: .005em;
+  font-size: clamp(38px, 6vw, 60px); line-height: 1; margin: 0;
+}
+.nentitulli {
+  font-family: var(--font-display); font-weight: 500;
+  font-size: clamp(22px, 3vw, 30px); line-height: 1.15; margin: 6px 0 0;
+}
+.kerkesa { margin: 16px 0 0; max-width: 62ch; }
+.te-dhenat {
+  margin: 12px 0 0; padding: 10px 14px; max-width: 62ch; font-size: 15px;
+  border: 1px solid var(--rule); border-left: 3px solid var(--proj);
+}
+.te-dhenat b { font-weight: 600; }
+.shenim { margin: 12px 0 0; max-width: 62ch; font-size: 15px; color: var(--muted); }
+.figura img { width: 100%; border: 1px solid var(--rule); background: #fff; }
+.figura a { display: block; }
+
+h2 {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: 26px; line-height: 1.1; margin: 36px 0 14px;
+  padding-top: 10px; border-top: 1.5px solid var(--ink);
+}
+h2 small { font-weight: 500; font-size: 18px; color: var(--muted); margin-left: 10px; }
+h3 { font-family: var(--font-display); font-weight: 600; font-size: 20px; margin: 18px 0 8px; }
+p { margin: 0 0 10px; }
+
+/* the animation slot */
+.korniza {
+  width: 100%; height: clamp(560px, 86vh, 980px);
+  border: 1.5px solid var(--ink); background: var(--paper); overflow: hidden;
+}
+.korniza iframe { display: block; width: 100%; height: 100%; border: 0; }
+@media (max-width: 700px) { .korniza { height: 82vh; } }
+.hap-plote, .hap-lenden {
+  display: inline-block; margin-top: 12px; text-decoration: none;
+  font-family: var(--font-display); font-weight: 600; font-size: 19px;
+  color: var(--proj); border-bottom: 1.5px solid currentColor; line-height: 1.2;
+}
+.pas-animacionit { display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: baseline; }
+.pas-animacionit .udhezim { font-size: 14px; color: var(--muted); margin-top: 12px; }
+
+/* the placeholder: drawn with a 2H construction line */
+.vend-i-lire {
+  display: grid; place-content: center; text-align: center;
+  min-height: 260px; padding: 28px 20px; color: var(--muted);
+  border: 1.5px dashed var(--pencil); background: transparent;
+}
+.vend-i-lire .ikona {
+  width: 58px; height: 58px; margin: 0 auto 14px; border-radius: 50%;
+  border: 1.5px dashed var(--pencil); display: grid; place-content: center;
+  font-size: 20px; padding-left: 4px;
+}
+.vend-i-lire .titulli { font-family: var(--font-display); font-weight: 600; font-size: 25px; line-height: 1.1; margin: 0; color: var(--ink); }
+.vend-i-lire .nen { margin: 8px 0 0; font-size: 15px; max-width: 48ch; }
+
+/* construction sheets (I.3) */
+.fletet { display: grid; gap: 22px; }
+.fletet img { width: 100%; border: 1px solid var(--rule); background: #fff; }
+
+/* book pages */
+.faqet { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(260px, 460px)); justify-content: start; }
+.faqet img { width: 100%; border: 1px solid var(--rule); background: #fff; }
+.teoria .faqet { grid-template-columns: 1fr; max-width: 760px; }
+
+/* previous / next */
+.para-pas {
+  display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center;
+  margin: 34px 0 26px; font-family: var(--font-display); font-weight: 600; font-size: 19px;
+}
+.para-pas a { text-decoration: none; }
+.para-pas .tjetra { text-align: right; }
+.para-pas .lista-link { font-weight: 500; color: var(--muted); text-align: center; }
+@media (max-width: 600px) {
+  .para-pas { grid-template-columns: 1fr 1fr; font-size: 17px; }
+  .para-pas .lista-link { grid-column: 1 / -1; order: 3; }
+}
+
+/* title block (stampa) at the foot of the frame */
+.stampa {
+  margin: 28px -14px 0; border-top: 2px solid var(--ink);
+  display: grid; grid-template-columns: 1fr;
+  font-family: var(--font-display); font-size: 16px; line-height: 1.25;
+}
+@media (min-width: 720px) { .stampa { margin: 36px -32px 0; grid-template-columns: 1.25fr 1fr; } }
+.stampa > div { padding: 8px 14px 10px; border-top: 1px solid var(--rule); }
+.stampa > div:nth-child(-n+2) { border-top: 0; }
+@media (min-width: 720px) {
+  .stampa > div:nth-child(odd) { border-right: 1px solid var(--rule); }
+  .stampa > .gjere { grid-column: 1 / -1; border-right: 0; }
+}
+.stampa .etiketa { display: block; font-size: 12px; color: var(--muted); font-weight: 500; }
+.stampa .vlera { font-weight: 600; font-size: 18px; }
+.stampa .institucioni { font-weight: 600; font-size: 19px; }
+.stampa .institucioni small { display: block; font-weight: 500; font-size: 15px; color: var(--muted); }
+.stampa .burimi { font-family: var(--font-body); font-size: 13px; color: var(--muted); }
+.stampa a { color: inherit; }
+
+/* course page: exercise groups and task rows */
+.hyrja { max-width: 66ch; margin: 0 0 6px; }
+.shkarkimet { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 10px 0 0; font-family: var(--font-display); font-size: 18px; font-weight: 600; }
+.shkarkimet a { text-decoration: none; border-bottom: 1.5px solid currentColor; }
+.ushtrimi h2 { margin-top: 40px; }
+.permbledhje { max-width: 70ch; color: var(--muted); margin: 0 0 14px; }
+.lista { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.lista li { border-bottom: 1px solid var(--rule); }
+.lista a {
+  display: grid; grid-template-columns: 5rem minmax(0, 1fr) auto; gap: 6px 14px;
+  align-items: baseline; padding: 9px 8px; color: inherit; text-decoration: none;
+}
+.lista a:hover { background: var(--tint); }
+.lista.me-figura a { grid-template-columns: 5rem 96px minmax(0, 1fr) auto; align-items: center; }
+.lista .fig { width: 96px; height: 60px; object-fit: contain; background: #fff; border: 1px solid var(--rule); display: block; }
+.lista .numri { font-family: var(--font-display); font-weight: 600; font-size: 22px; line-height: 1; white-space: nowrap; }
+.lista .emri { font-size: 16px; }
+.lista .statusi { font-size: 13.5px; white-space: nowrap; }
+.lista .statusi.ka { color: var(--proj); font-weight: 600; }
+.lista .statusi.pa { color: var(--muted); }
+.statusi.ka::before { content: "\25B6"; font-size: 10px; margin-right: 6px; vertical-align: 1px; }
+.statusi.pa::before {
+  content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 6px;
+  border: 1.5px dashed var(--pencil); vertical-align: -1px;
+}
+@media (max-width: 520px) {
+  .lista a { grid-template-columns: 4.2rem minmax(0, 1fr); }
+  .lista.me-figura a { grid-template-columns: 4.2rem 72px minmax(0, 1fr); }
+  .lista .fig { width: 72px; height: 48px; }
+  .lista .statusi { grid-column: 2 / -1; }
+  .lista.me-figura .statusi { grid-column: 3; }
+}
+
+/* home */
+.hero h1 { font-size: clamp(42px, 7.2vw, 76px); max-width: 14ch; }
+.hero .nen { font-family: var(--font-display); font-weight: 500; font-size: clamp(19px, 2.4vw, 25px); color: var(--muted); max-width: 42ch; margin: 10px 0 0; line-height: 1.25; }
+.legjenda {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px 26px;
+  margin: 28px 0 8px; font-size: 13.5px; color: var(--muted);
+}
+.legjenda .vija { display: block; height: 0; border-top: 2px solid var(--ink); margin-bottom: 7px; }
+.legjenda .vija.holle { border-top-width: 1px; }
+.legjenda .vija.nderprere { border-top: 1.5px dashed var(--ink); }
+.legjenda .vija.aks {
+  border: 0; height: 1px;
+  background: repeating-linear-gradient(90deg, var(--ink) 0 14px, transparent 14px 18px, var(--ink) 18px 20px, transparent 20px 24px);
+}
+.lendet { display: grid; gap: 22px; margin-top: 30px; }
+@media (min-width: 760px) { .lendet { grid-template-columns: 1fr 1fr; } }
+.lenda { border: 1.5px solid var(--ink); padding: 18px 20px 20px; display: flex; flex-direction: column; }
+.lenda h2 { border: 0; margin: 0; padding: 0; font-size: 32px; }
+.lenda .numrat { font-family: var(--font-display); font-size: 18px; color: var(--muted); margin: 4px 0 10px; }
+.lenda p { max-width: 50ch; }
+.lenda ul { list-style: none; margin: 8px 0 0; padding: 0; }
+.lenda li { border-top: 1px solid var(--rule); padding: 7px 0; display: flex; justify-content: space-between; gap: 12px; }
+.lenda li a { text-decoration: none; color: inherit; font-weight: 500; }
+.lenda li a:hover { color: var(--proj); }
+.lenda li .sa { color: var(--muted); font-size: 14px; white-space: nowrap; }
+.lenda .hap { margin-top: auto; padding-top: 16px; }
+.si-perdoret { margin-top: 36px; max-width: 70ch; }
+.si-perdoret ol { padding-left: 20px; margin: 8px 0 0; }
+.si-perdoret li { margin: 4px 0; }
+
+@media print {
+  body { background: #fff; padding: 0; }
+  .korniza, .hap-plote, .para-pas { display: none; }
+}
