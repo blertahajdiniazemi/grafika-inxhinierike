@@ -156,6 +156,12 @@ h1 { margin: 2px 0 0; font-family: var(--font-display); font-weight: 600; font-s
   font: 600 14px/1 var(--font-display); letter-spacing: .04em; cursor: pointer;
 }
 .btn:hover { border-color: var(--muted); }
+.zoom-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.zoom-tools .zoom-label { font: 600 14px/1 var(--font-display); color: var(--muted); margin-right: 4px; }
+.zoom-tools .btn { min-width: 38px; height: 34px; font-size: 17px; }
+.zoom-tools .zoom-reset { font-size: 13px; min-width: 65px; font-variant-numeric: tabular-nums; }
+.zoom-tools .btn:disabled { opacity: .42; cursor: default; }
+.zoom-tools .btn:disabled:hover { border-color: var(--rule); }
 .btn:focus-visible, .steps button:focus-visible, .scrub:focus-visible { outline: 2px solid var(--proj); outline-offset: 2px; }
 .btn svg { width: 18px; height: 18px; fill: currentColor; }
 .btn.play { min-width: 92px; background: var(--ink); color: var(--paper); border-color: var(--ink); }
@@ -329,6 +335,12 @@ h1 { margin: 2px 0 0; font-family: var(--font-display); font-weight: 600; font-s
         <canvas id="gl" aria-hidden="true"></canvas>
         <div class="labels" id="labels"></div>
         <div class="hint" id="hint"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 4a8 8 0 0 1 7.9 6.7h-2.1A6 6 0 0 0 6.1 9.4L8 11H3V6l1.7 1.7A8 8 0 0 1 12 4Zm-7.9 9.3h2.1a6 6 0 0 0 11.7 1.3L16 13h5v5l-1.7-1.7A8 8 0 0 1 4.1 13.3Z"/></svg><span data-ui="drag"></span></div>
+      </div>
+      <div class="zoom-tools" role="group" aria-labelledby="zoom-label">
+        <span class="zoom-label" id="zoom-label" data-ui="zoomLabel"></span>
+        <button class="btn" type="button" id="zoom-out" disabled>−</button>
+        <button class="btn zoom-reset" type="button" id="zoom-reset" disabled>100%</button>
+        <button class="btn" type="button" id="zoom-in" disabled>+</button>
       </div>
       <div class="controls">
         <button class="btn" id="prev"><svg viewBox="0 0 24 24"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
@@ -1319,7 +1331,7 @@ document.documentElement.lang = LANG;
 /* ------------------------------------------------------------------ texts (UI + default captions) */
 const UI = {
   sq: { legendProj: 'vijat e projektimit', legendCut: 'rrafshi prerës', drag: 'Tërhiqe për ta rrotulluar trupin',
-        keyTitle: 'Ngjyrat e sipërfaqeve', step: (i, n) => `Hapi ${i} nga ${n}`, play: 'Luaj', pause: 'Pauzë', replay: 'Përsërit',
+        zoomLabel: 'Zmadhimi 3D', zoomIn: 'Zmadho objektin 3D', zoomOut: 'Zvogëlo objektin 3D', zoomReset: 'Ktheje në 100%', keyTitle: 'Ngjyrat e sipërfaqeve', step: (i, n) => `Hapi ${i} nga ${n}`, play: 'Luaj', pause: 'Pauzë', replay: 'Përsërit',
         prev: 'Hapi i mëparshëm', next: 'Hapi tjetër', timeline: 'Shiriti kohor',
         nogl: 'Hapat 3D kërkojnë WebGL, i cili në këtë shfletues është i çaktivizuar. Hapat e vizatimit funksionojnë njësoj.',
         no3dlib: 'Biblioteka 3D nuk u ngarkua, prandaj animacioni nuk mund të luhet këtu. Shfaqet fleta e përfunduar.',
@@ -1328,7 +1340,7 @@ const UI = {
         dirF: 'Drejtimi i shikimit<small>pamja ballore</small>', dirT: 'Shikimi nga lart', dirL: 'Shikimi nga e majta', dirR: 'Shikimi nga e djathta',
         cutPlane: L => `Rrafshi prerës ${L}`, cutFace: 'Sipërfaqja e prerjes<small>vizim në 45°</small>', deg45: '45°' },
   en: { legendProj: 'projection lines', legendCut: 'cutting plane', drag: 'Drag to turn the part',
-        keyTitle: 'Surface colours', step: (i, n) => `Step ${i} of ${n}`, play: 'Play', pause: 'Pause', replay: 'Replay',
+        zoomLabel: '3D zoom', zoomIn: 'Zoom in', zoomOut: 'Zoom out', zoomReset: 'Reset to 100%', keyTitle: 'Surface colours', step: (i, n) => `Step ${i} of ${n}`, play: 'Play', pause: 'Pause', replay: 'Replay',
         prev: 'Previous step', next: 'Next step', timeline: 'Timeline',
         nogl: 'The 3D steps need WebGL, which this browser has turned off. The drawing steps still work.',
         no3dlib: 'The 3D library could not load, so the animation cannot run here. The finished sheet is shown instead.',
@@ -1908,7 +1920,32 @@ function resize() {
   if (has3d) { renderer.setSize(sw, shh, false); for (const m of lineMats) m.resolution.set(sw, shh); }
   dirty = true;
 }
-let userAz = 0, userEl = 0;
+let userAz = 0, userEl = 0, userZoom = 1;
+const zoomOut = document.getElementById('zoom-out'), zoomReset = document.getElementById('zoom-reset'), zoomIn = document.getElementById('zoom-in');
+for (const [button, name] of [[zoomOut, UI.zoomOut], [zoomReset, UI.zoomReset], [zoomIn, UI.zoomIn]]) {
+  button.title = name; button.setAttribute('aria-label', name);
+}
+const zoomActive = () => has3d && tr.userW(g) >= 0.5;
+function syncZoom() {
+  const active = zoomActive();
+  zoomOut.disabled = !active || userZoom <= 0.5;
+  zoomIn.disabled = !active || userZoom >= 2;
+  zoomReset.disabled = !active || userZoom === 1;
+  zoomReset.textContent = `${Math.round(userZoom * 100)}%`;
+}
+function setZoom(value) {
+  if (!zoomActive()) return;
+  userZoom = clamp(Math.round(value * 100) / 100, 0.5, 2);
+  syncZoom(); dirty = true;
+}
+zoomOut.addEventListener('click', () => setZoom(userZoom - 0.25));
+zoomIn.addEventListener('click', () => setZoom(userZoom + 0.25));
+zoomReset.addEventListener('click', () => setZoom(1));
+stage.addEventListener('wheel', ev => {
+  if (!zoomActive() || ev.ctrlKey || ev.metaKey || !ev.deltaY) return;
+  ev.preventDefault();
+  setZoom(userZoom + (ev.deltaY < 0 ? 0.1 : -0.1));
+}, { passive: false });
 function applyState(g) {
   // sheet framing: zoomed on the views, then the whole sheet
   {
@@ -1927,7 +1964,8 @@ function applyState(g) {
   // camera
   const uw = tr.userW(g);
   const az = tr.az(g) + userAz * uw, el = clamp(tr.el(g) + userEl * uw, -10, 70);
-  const h = tr.h(g), tgt = tr.target(g);
+  // User zoom affects only the 3D camera, fading to the original framing during unfolding.
+  const h = tr.h(g) / (1 + (userZoom - 1) * uw), tgt = tr.target(g);
   const a = az * Math.PI / 180, e = el * Math.PI / 180;
   const d = new THREE.Vector3(-Math.sin(a) * Math.cos(e), -Math.cos(a) * Math.cos(e), Math.sin(e));
   const T = new THREE.Vector3(...tgt);
@@ -1995,6 +2033,7 @@ const stepno = document.getElementById('stepno'), capTitle = document.getElement
 let lastCap = '';
 const chapterAt = g => CH.find(c => g < c.end) || CH[CH.length - 1];
 function updateUI(g) {
+  syncZoom();
   const c = chapterAt(g), i = CH.indexOf(c), t = g - c.start;
   let s = c.caps[0][1];
   for (const [t0, s_] of c.caps) if (t >= t0 - 1e-6) s = s_;
