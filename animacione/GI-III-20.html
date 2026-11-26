@@ -205,6 +205,16 @@ h1 { margin: 2px 0 0; font-family: var(--font-display); font-weight: 600; font-s
   .lab small { display: none; }
 }
 </style>
+<script>/* embed: vetëm dritarja grafike kur hapet brenda faqes së ushtrimit */
+try{if(new URLSearchParams(location.search).has('embed'))document.documentElement.classList.add('embed');}catch(e){}</script>
+<style id="embed-css">
+html.embed, html.embed body { margin: 0; height: 100%; overflow: hidden; background: var(--paper); }
+html.embed body { padding: 0; }
+html.embed .app { max-width: none; height: 100%; padding: 0; display: block; }
+html.embed .top, html.embed .panel, html.embed .zoom-tools, html.embed .controls { display: none !important; }
+html.embed .main, html.embed .stage-col { display: block; height: 100%; }
+html.embed .stage { aspect-ratio: auto; width: 100%; height: 100%; border: 0; border-radius: 0; }
+</style>
 
 <div class="app">
   <header class="top">
@@ -2058,7 +2068,7 @@ new MutationObserver(retheme).observe(document.documentElement, { attributes: tr
 /* ------------------------------------------------------------------ loop */
 function frame(now) {
   const dt = Math.min(0.1, (now - last) / 1000); last = now;
-  if (playing && !scrubbing) { g += dt; if (g >= TOTAL) { g = TOTAL; playing = false; syncPlay(); } dirty = true; }
+  if (playing && !scrubbing) { g += dt; if (g >= TOTAL) { g = TOTAL; playing = false; syncPlay(); if (document.documentElement.classList.contains('embed')) setTimeout(() => { if (!playing && g >= TOTAL) play(); }, 4000); } dirty = true; }
   if (dirty) { applyState(g); if (has3d) { renderer.render(scene, cam3); placeLabels(g); } updateUI(g); dirty = false; }
   requestAnimationFrame(frame);
 }
