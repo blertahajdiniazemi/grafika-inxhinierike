@@ -2092,6 +2092,23 @@ if (!has3d) {
   for (const n of D.layers) if (/^(geom|hatch|hidden|free)-/.test(n)) LT[n] = () => 1;
   labelsEl.innerHTML = `<div class="nogl">${window.THREE ? UI.nogl : UI.no3dlib}</div>`;
 }
+/* korniza e tekstit me lartësi fikse: sa teksti më i gjatë i të gjithë hapave */
+const capBox = document.querySelector('.cap');
+function fitCap() {
+  if (!capBox || !capBox.offsetWidth) return;
+  const keep = [stepno.textContent, capTitle.textContent, capTerm.textContent, capText.textContent];
+  capBox.style.minHeight = '0px'; capBox.style.height = 'auto';
+  let h = 0;
+  CH.forEach((c, i) => { for (const cap of c.caps) {
+    stepno.textContent = UI.step(i + 1, CH.length); capTitle.textContent = c.title; capTerm.textContent = c.term || ''; capText.textContent = cap[1];
+    h = Math.max(h, capBox.offsetHeight);
+  } });
+  [stepno.textContent, capTitle.textContent, capTerm.textContent, capText.textContent] = keep;
+  capBox.style.height = h + 'px';
+}
+window.addEventListener('resize', fitCap);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitCap);
+fitCap();
 window.addEventListener('resize', resize);
 if (window.ResizeObserver) new ResizeObserver(resize).observe(stage);
 resize();
